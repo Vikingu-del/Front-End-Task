@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(65deg, rgb(36, 35, 94), rgb(22, 236, 226));
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 600px;
+    background-color: white;
+    align-items: center;
+    padding: 20px;
+}
+.right {
+    position: relative;
+}
+.right h1 {
+    color: white;
+    position: absolute;
+    top: 0;
+    font-size: 60px;
+}
+form {
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    display: flex;
+}
+form input{
+    width: 150px;
+    height: 30px;
+    padding: 0 5px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+}
+form button {
+    width: 70px;
+    height: 30px;
+    padding-inline: 10px;
+    border: rgb(3, 3, 78);
+    border-radius: 6px;
+    background: rgb(50, 50, 250);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.container{
+    width: 100%;
+}
+.container input{
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    padding: 4px;
+}
+
+#myUl{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+
+.added-list {
+    border: 1px solid lightgray;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 4px 3px rgb(233, 227, 227);
+}
+
+.added-div{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    line-height: 120%;
+    position: absolute;
+    top: 12px;
+    left: 60px;
+}
+.data-type {
+    font-weight: bolder;
+    font-size: smaller;
+}
+.remove{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 15px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background: rgb(214, 11, 11);
+    border-radius: 100%;
+}
+.remove:hover{
+    background-color: rgb(58, 2, 2);;
+}
+.user-avatar{
+    width: 40px;
+    height: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.selector {
+    width: 80px;
+    height: 30px;
+    margin-left: 4px;
+    position: relative;
+}
+.select-btn {
+    width: 100%;
+    height: inherit;
+    padding: 2px;
+    margin-bottom: 30px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    justify-content: space-around;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    cursor: pointer;
+    font-size: smaller;
+}
+
+.list-items{
+    width: 90px;
+    color: white;
+    list-style: none;
+    font-size: smaller;
+    background: rgb(61, 65, 65);
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    text-align: center;
+    border-radius: 6x;
+    cursor: pointer;
+    display: none;
+}
+.select-btn.open ~ .list-items{
+    display: block;
+}
+
+.item{
+    width: 2/3;
+    cursor: pointer;
+    font-size: smaller;
+    margin: 4px;
+}
+
+.item:hover{
+    background: rgb(50, 50, 250);
+}
+
+.hide{
+    display: none;
+}
+.trek{
+    position: absolute;
+    top: 0;
+    left: 70px;
+    color: rgb(61, 65, 65);
+}
+.autosugestions{
+    width: 90px;
+    position: relative;
+    display: none;
+}
+.lista-sugjerimeve{
+    width: 100px;
+    padding: 10px;
+    background: rgb(61, 65, 65);
+    color: white;
+    font-size: small;
+    list-style: none;
+    position: absolute;
+    top: -9px;
+    left: 50px;
+}
+.lista-sugjerimeve.open ~ li{
+    display: block;
+}

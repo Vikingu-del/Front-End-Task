@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat$display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <section class="left"></section>
+    <section class="center">
+        <form autocomplete="off">
+            <input type="text" name="text" id="txt" placeholder="Emri" required>
+            <div class="selector">
+                <div class="select-btn">
+                    <span class="btn-text">Student</span>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <ul class="list-items">
+                    <li class="item def">
+                        <i class="fa fa-check check-icon" aria-hidden="true"></i>
+                        <span class="item-text">
+                            Student
+                        </span>
+                    </li>
+                    <li class="item">
+                        <span class="item-text">
+                            Mesues
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <button type="submit" class="btn-lst">
+                <p>+ SHTO</p>
+            </button>
+        </form>
+        <div class="container">
+            <input type="search" placeholder="&nbsp; Kërko" id="search" title="Type in a name">
+            <div class="autosugestions">
+                <i class="fa fa-caret-up trek" aria-hidden="true"></i>
+                <ul class="lista-sugjerimeve">
+                </ul>
+            </div>
+            <ul id="myUl">
+            </ul>
+        </div>
+    </section>
+    <section class="right">
+        <h1>VEED.IO</h1>
+    </section>
+</body>
+</html>
