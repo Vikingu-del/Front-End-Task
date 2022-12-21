@@ -83,6 +83,7 @@ form button {
     position: relative;
     cursor: pointer;
     box-shadow: 0px 4px 3px rgb(233, 227, 227);
+    z-index: 1;
 }
 
 .added-div{
@@ -186,19 +187,37 @@ form button {
 .autosugestions{
     width: 90px;
     position: relative;
-    display: none;
 }
 .lista-sugjerimeve{
     width: 100px;
-    padding: 10px;
-    background: rgb(61, 65, 65);
     color: white;
     font-size: small;
     list-style: none;
     position: absolute;
     top: -9px;
     left: 50px;
+    z-index: 10;
 }
-.lista-sugjerimeve.open ~ li{
-    display: block;
+.list-suggestions{
+    background: rgb(61, 65, 65);
+    border: 1px solid rgb(61, 65, 65);
+    padding: 10px;
+}
+.autoSugestions{
+    position: relative;
+}
+.lista-Sugjerimeve{
+    width: 100px;
+    color: white;
+    font-size: small;
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    z-index: 10;
+}
+.list-Suggestions{
+    background: rgb(61, 65, 65);
+    border: 1px solid rgb(61, 65, 65);
+    padding: 10px;
 }
